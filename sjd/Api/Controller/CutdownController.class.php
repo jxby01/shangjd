@@ -15,7 +15,12 @@ class CutdownController extends Controller{
      * 商品列表/创建砍价
      */
     public function create_cut(){
-        
+        if(!empty($_POST)){
+            $id = $_POST['id'];
+
+        }else{
+
+        }
     }
 }
 ?>

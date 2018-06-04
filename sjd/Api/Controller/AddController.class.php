@@ -101,11 +101,7 @@ class AddController extends Controller{
 			 exit(json_encode(array('msg'=>'未接受到数据')));
 		}
 	}
-public function tt(){
-            $phone='15023448139';
-      $res = sendMsg($phone);
-      print_r($res);eixt;
-}
+
     /**
      * 获取找回密码的验证码
      */
