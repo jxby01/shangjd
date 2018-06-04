@@ -50,9 +50,20 @@ class AddController extends Controller{
      * 券号的导入或者生成
      */
     public function add_ticket(){
-        if($_POST['voucher_way']==0){
-
-        }else{
+        if($_POST['voucher_way']==0){//系统随机生成
+            $num = $_POST['num'];//生成券号个数
+            $leng = $_POST['leng'];//券号长度
+            $data['com_id'] = $_POST['com_id'];
+            for($i=0;$i<$num;$i++){
+                $data['code'] =getRandCode($leng);
+                $res = M('voucher')->add();
+            }
+            if($res){
+                exit(1);
+            }else{
+                exit(0);
+            }
+        }else{//手工导入
 
         }
     }
@@ -79,6 +90,7 @@ class AddController extends Controller{
      * 获取验证码
      */
         public function register(){//发送验证码
+            header('Access-Control-Allow-Origin:*');
             if(!empty($_POST)){
             if(M('customer')->where(array('phone'=>$_POST['phone']))->find()){
                 exit(json_encode(array('msg'=>'账号已被注册','result'=>0)));
@@ -106,9 +118,8 @@ class AddController extends Controller{
                     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
                     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
                 }
-				// echo(curl_exec($curl));
-				curl_exec($curl);
-				exit($code);
+				echo(curl_exec($curl));
+				exit;
 
 			 }
 		 }else{
@@ -138,6 +149,7 @@ class AddController extends Controller{
     public function user_login(){
         if(!empty($_POST)){
             $name = $_POST['name'];
+            $_SESSION['user_name'] = $name;
             $pass = sha1($_POST['password']);
             $res = M('customer')->where(array('user_name'=>$name,'password'=>$pass))->find();
             if($res){
