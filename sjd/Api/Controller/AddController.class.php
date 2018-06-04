@@ -68,6 +68,10 @@ class AddController extends Controller{
         }
     }
 
+    public function test(){
+       $res = M("actor")->where(array("acr_id"=>1))->find();
+       print_r($res);exit;
+    }
     /**
      *用户的注册
      */
@@ -147,11 +151,12 @@ class AddController extends Controller{
      */
     public function user_login(){
         if(!empty($_POST)){
-            $name = $_POST['name'];
-            $_SESSION['user_name'] = $name;
+            $name = $_POST['phone'];
+
             $pass = sha1($_POST['password']);
-            $res = M('customer')->where(array('user_name'=>$name,'password'=>$pass))->find();
+            $res = M('customer')->where(array('phone'=>$name,'password'=>$pass))->find();
             if($res){
+                 $_SESSION['phone'] = $name;
                  $this->ajaxReturn($res);//成功
             }else{
                 echo 0;//失败
