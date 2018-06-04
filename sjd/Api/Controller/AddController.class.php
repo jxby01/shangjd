@@ -22,8 +22,40 @@ class AddController extends Controller{
 		if(!empty($_POST)){
 		    $id=$_POST['id'];
 		    $res = M('activity')->where(array('ac_id'=>$id))->save($_POST);
+		    if($res){
+		        echo $res;
+            }else{
+		        echo 0;
+            }
         }
 	}
+
+    /**
+     * 商品信息的添加
+     */
+    public function add_commoddity(){
+        if(!empty($_POST)){
+            $k=count($_POST);
+            for($i=0;$i<$k;$i++){
+                $result = M('commodity')->add($_POST[$k]);
+            }
+            if($result){
+                $this->ajaxReturn($result);
+            }
+
+        }
+    }
+
+    /**
+     * 券号的导入或者生成
+     */
+    public function add_ticket(){
+        if($_POST['voucher_way']==0){
+
+        }else{
+
+        }
+    }
 
     /**
      *用户的注册
@@ -31,7 +63,7 @@ class AddController extends Controller{
 	public function add_user(){
         if(!empty($_POST)){
             if($_POST['code'] == $_SESSION['code']){//验证码是否正确
-                $data['user_name'] = $_POST['name'];
+                $data['phone'] = $_POST['phone'];
                 $data['password'] = sha1($_POST['password']);
                 $data['create_time'] = time();
                 if(M('customer')->add($data)){
@@ -107,12 +139,28 @@ class AddController extends Controller{
         if(!empty($_POST)){
             $name = $_POST['name'];
             $pass = sha1($_POST['password']);
-            if(M('customer')->where(array('user_name'=>$name,'password'=>$pass))->find()){
-                echo 1;//成功
+            $res = M('customer')->where(array('user_name'=>$name,'password'=>$pass))->find();
+            if($res){
+                 $this->ajaxReturn($res);//成功
             }else{
                 echo 0;//失败
             }
         }
+    }
+
+    /**
+     * 图片上传，返回路径
+     */
+    public function up_imgs(){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  = './Uploads/'; // 设置附件上传根目录
+        $upload->savePath  = 'Product/'; // 设置附件上传（子）目录
+        // 上传文件
+        $info   =   $upload->upload();
+        $imgs = 'Uploads/'.$info['file']['savepath'].$info['file']['savename'];
+        exit(json_encode(array("code"=>0,"msg"=>'上传成功','src'=>$imgs)));//返回到JS中进行处理
     }
 
 }

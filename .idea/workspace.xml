@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7150d4c6-7d4b-4436-8c27-32bba1a055d8" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/sjd/Runtime/Logs/Admin/18_06_04.log" afterPath="$PROJECT_DIR$/sjd/Runtime/Logs/Admin/18_06_04.log" />
+      <change beforePath="$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php" afterPath="$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="AddController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="308">
+              <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -31,6 +31,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>$bodys</find>
+      <find>$ajaxReturn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,7 +51,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-54" />
     <option name="y" value="20" />
     <option name="width" value="1936" />
@@ -134,15 +135,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528078750475</updated>
-      <workItem from="1528078752224" duration="3851000" />
+      <workItem from="1528078752224" duration="8055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3851000" />
+    <option name="totallyTimeSpent" value="8055000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -180,8 +181,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="308">
+          <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding />
         </state>
       </provider>
