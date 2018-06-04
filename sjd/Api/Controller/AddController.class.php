@@ -72,6 +72,7 @@ class AddController extends Controller{
      *用户的注册
      */
 	public function add_user(){
+        header('Access-Control-Allow-Origin:*');
         if(!empty($_POST)){
                 $data['phone'] = $_POST['phone'];
                 $data['password'] = sha1($_POST['password']);
