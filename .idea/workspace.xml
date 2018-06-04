@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7150d4c6-7d4b-4436-8c27-32bba1a055d8" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php" afterPath="$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php" />
-      <change beforePath="$PROJECT_DIR$/sjd/Runtime/Logs/Api/18_06_04.log" afterPath="$PROJECT_DIR$/sjd/Runtime/Logs/Api/18_06_04.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="AddController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="120" column="21" lean-forward="false" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+            <state relative-caret-position="65">
+              <caret line="92" column="52" lean-forward="false" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -154,12 +153,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528078750475</updated>
-      <workItem from="1528078752224" duration="11556000" />
+      <workItem from="1528078752224" duration="12208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11556000" />
+    <option name="totallyTimeSpent" value="12208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -208,8 +207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="120" column="21" lean-forward="false" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+        <state relative-caret-position="65">
+          <caret line="92" column="52" lean-forward="false" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
           <folding />
         </state>
       </provider>

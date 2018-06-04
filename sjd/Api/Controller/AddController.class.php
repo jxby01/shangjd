@@ -90,6 +90,7 @@ class AddController extends Controller{
      * 获取验证码
      */
         public function register(){//发送验证码
+            header('Access-Control-Allow-Origin:*');
             if(!empty($_POST)){
             if(M('customer')->where(array('phone'=>$_POST['phone']))->find()){
                 exit(json_encode(array('msg'=>'账号已被注册','result'=>0)));
