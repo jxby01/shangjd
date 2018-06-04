@@ -1,0 +1,46 @@
+[ 2018-06-04T09:59:09+08:00 ] 127.0.0.1 /index.php/Api/Add/add_activity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.0120s ]
+SQL: INSERT INTO `sj_activity` (`create_id`,`ac_create_time`) VALUES ('3','1528077549') [ RunTime:0.0010s ]
+
+[ 2018-06-04T09:59:39+08:00 ] 127.0.0.1 /index.php/Api/Add/add_activity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.0180s ]
+SQL: INSERT INTO `sj_activity` (`create_id`,`ac_create_time`) VALUES ('3','1528077579') [ RunTime:0.0010s ]
+
+[ 2018-06-04T10:00:16+08:00 ] 127.0.0.1 /index.php/Api/Add/add_activity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.0160s ]
+SQL: INSERT INTO `sj_activity` (`create_id`,`ac_create_time`) VALUES ('3','1528077616') [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-06-04T10:00:31+08:00 ] 127.0.0.1 /index.php/Api/Add/add_activity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.0160s ]
+SQL: INSERT INTO `sj_activity` (`create_id`,`ac_create_time`) VALUES ('3','1528077631') [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
