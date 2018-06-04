@@ -11,7 +11,7 @@ class IndexController extends CommonController{
 		$list = $customer->order('user_id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 		//rint_r($list);
 		$this->assign('list',$list);// 赋值数据集
-		$this->assign('page',$show);// 赋值分页输出1
+		$this->assign('page',$show);// 赋值分页输出
 		$this->view('index/index');
 	}
 	public function admin_edit(){
