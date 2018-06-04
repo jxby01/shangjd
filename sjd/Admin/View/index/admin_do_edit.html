@@ -1,0 +1,99 @@
+<section class="rt_wrap content mCustomScrollbar">
+<div class="rt_content">
+<section>
+      <h2><strong style="color:grey;">修改密码</strong></h2>
+	  <form id="news_form"  enctype="multipart/form-data">
+      <ul class="ulColumn2">
+	  <li>
+        <span class="item_name" style="width:120px;">管理员名称</span>
+        <input type="text" class="textbox textbox_295" value="{$name}" id="username" name="username"/>
+		<span id="notice1" style="display:none;" class="errorTips">不能空</span>
+       </li>
+	   <li>
+        <span class="item_name" style="width:120px;">修改密码</span>
+        <input type="password" class="textbox textbox_295" id="password" name="password"/>
+       <span id="notice2" style="display:none;" class="errorTips">不设密码怎么登陆？</span>
+       </li>
+		<li>
+        <span class="item_name" style="width:120px;">确认密码</span>
+        <input type="password" class="textbox textbox_295" id="mima" name="mima"/>
+		<span id="notice3" style="display:none;" class="errorTips">请确认密码</span>
+		<span id="notice4" style="display:none;" class="errorTips">两次输入不一致</span>
+       </li>
+       
+       <li>
+        <span class="item_name" style="width:120px;"></span>
+        <input type="submit" id="sub" class="link_btn"/>
+       </li>
+      </ul>
+	  </form>
+     </section>
+	</div>
+</section>
+<script>
+$(function(){
+	$('#news_form').submit(function(){
+		var username = $('#username').val();
+		var password = $('#password').val();
+		var mima = $('#mima').val();
+		if(username == null || username== ''){
+				$('#notice1').attr('style','display:inline-block');
+					return false;
+			}else{
+				$('#notice1').attr('style','display:none');
+				
+			}
+			if(password == null || password== ''){
+				$('#notice2').attr('style','display:inline-block');
+					return false;
+			}else{
+				$('#notice2').attr('style','display:none');
+				
+			}
+		if(mima == null || mima== ''){
+				$('#notice3').attr('style','display:inline-block');
+					return false;
+			}else{
+				$('#notice3').attr('style','display:none');
+				
+			}
+		if(mima == password){
+				$('#notice4').attr('style','display:none');
+					
+		}else{
+				$('#notice4').attr('style','display:inline-block');
+					return false;
+		}
+		
+		$.ajax({
+			type:"post",
+			data:{password:password,username:username},
+			url:'{:U("Admin/Index/admin_do_edits")}',
+			success:function(res){
+				if(res==1){
+					window.location.href="{:U('Admin/Login/logoutset')}";
+				}else{
+					alert('出错，请稍后重试');
+				}
+			}
+		})
+		
+	})
+	
+	$('#username').focus(function(){
+	
+	$('#password').focus(function(){
+	$('#notice2').attr('style','display:none');
+			return false;})
+			
+	$('#mima').focus(function(){
+	$('#notice3').attr('style','display:none');
+			return false;})
+	$('#mima').focus(function(){
+	$('#notice4').attr('style','display:none');
+			return false;})		
+})
+})
+
+
+</script>

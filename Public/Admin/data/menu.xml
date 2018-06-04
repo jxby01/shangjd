@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+	<module>
+		<name id="1">活动</name>
+		<en>news</en>
+		<controller>
+			<name id="2">活动列表</name>
+			<en>list</en>
+			<link><![CDATA[activity/activity_list]]></link>
+		</controller>
+	</module>
+	<module>
+		<name id="1">用户</name>
+		<en>news</en>
+		<controller>
+			<name id="2">用户列表</name>
+			<en>list</en>
+			<link><![CDATA[Index/index]]></link>
+		</controller>
+	</module>
+</menu>
