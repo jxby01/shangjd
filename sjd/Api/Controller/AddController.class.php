@@ -73,7 +73,6 @@ class AddController extends Controller{
      */
 	public function add_user(){
         if(!empty($_POST)){
-            if($_POST['code'] == $_SESSION['code']){//验证码是否正确
                 $data['phone'] = $_POST['phone'];
                 $data['password'] = sha1($_POST['password']);
                 $data['create_time'] = time();
@@ -82,7 +81,6 @@ class AddController extends Controller{
                 }else{
                     echo 0;//注册失败
                 }
-            }
         }
     }
 
@@ -96,7 +94,6 @@ class AddController extends Controller{
                 exit(json_encode(array('msg'=>'账号已被注册','result'=>0)));
             }else{
                 $code = rand(1000,9999);//验证码
-                $_SESSION['code']=$code;
 				$host = "https://feginesms.market.alicloudapi.com";//api访问链接
 				$path = "/codeNotice";//API访问后缀
 				$method = "GET";
@@ -118,8 +115,8 @@ class AddController extends Controller{
                     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
                     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
                 }
-				echo(curl_exec($curl));
-				exit;
+				curl_exec($curl);
+				echo $code;
 
 			 }
 		 }else{
