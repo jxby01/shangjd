@@ -31,7 +31,7 @@ cursor:pointer;
 	   <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr>
         <td><?php echo ($vo["id"]); ?></td>
 		<td><?php echo ($vo["user_name"]); ?></td>
-        <td><img style="width:45px;height:45px;" src="/sjd/<?php echo ($vo["img"]); ?>"></td>
+        <td><img style="width:45px;height:45px;" src="/<?php echo ($vo["img"]); ?>"></td>
         <td><?php echo ($vo["phone"]); ?></td>
         <td><?php echo ($vo["city"]); ?></td>
         <td><?php if($vo['sex'] == 1){echo '男';}elseif($vo['sex']==0){echo '女';}else{echo '保密';}?></td>

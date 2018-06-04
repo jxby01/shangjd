@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <title>后台管理系统</title>
 <meta name="author" content="DeathGhost" />
-<link rel="stylesheet" type="text/css" href="/sjd/Public/admin/css/style.css" />
-<link rel="stylesheet" href="/sjd/Public/admin/css/normalize.css">
-<link rel="stylesheet" href="/sjd/Public/admin/css/style1.css" media="screen" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/Public/admin/css/style.css" />
+<link rel="stylesheet" href="/Public/admin/css/normalize.css">
+<link rel="stylesheet" href="/Public/admin/css/style1.css" media="screen" type="text/css" />
 
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <![endif]-->
-<script src="/sjd/Public/admin/js/jquery-1.8.3.min.js"></script>
-<script src="/sjd/Public/admin/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="/sjd/Public/admin/layer/layer.js"></script>
+<script src="/Public/admin/js/jquery-1.8.3.min.js"></script>
+<script src="/Public/admin/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/Public/admin/layer/layer.js"></script>
 <script>
 	(function($){
 		$(window).load(function(){
@@ -40,7 +40,7 @@
 <body>
 <!--header-->
 <header>
- <h1><img src="/sjd/Public/admin/images/admin_logo.png"/></h1>
+ <h1><img src="/Public/admin/images/admin_logo.png"/></h1>
  <ul class="rt_nav">
   <li><a id="change" style="cursor:pointer;" class="set_icon">修改密码</a></li>
   <li><a href="<?php echo U('Admin/Login/logout');?>" class="quit_icon">安全退出</a></li>
@@ -56,7 +56,7 @@
    <dl>
     <dt><?php echo $v->name;?></dt>
 	<?php foreach($v->controller as $r):?>
-    <dd><a href="/sjd/index.php/Admin/<?php echo $r->link;?>" <?php if($getU == $r->link){echo 'class="active"';}?>><?php echo $r->name;?></a></dd>
+    <dd><a href="/index.php/Admin/<?php echo $r->link;?>" <?php if($getU == $r->link){echo 'class="active"';}?>><?php echo $r->name;?></a></dd>
 	<?php endforeach;?>
     <!--当前链接则添加class:active-->
 
