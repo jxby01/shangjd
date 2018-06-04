@@ -68,10 +68,6 @@ class AddController extends Controller{
         }
     }
 
-    public function test(){
-       $res = M("actor")->where(array("acr_id"=>1))->find();
-       print_r($res);exit;
-    }
     /**
      *用户的注册
      */
@@ -90,45 +86,43 @@ class AddController extends Controller{
     }
 
     /**
-     * 获取验证码
+     * 获取注册验证码
      */
-        public function register(){//发送验证码
-            header('Access-Control-Allow-Origin:*');
+        public function register(){//注册发送验证码
             if(!empty($_POST)){
             if(M('customer')->where(array('phone'=>$_POST['phone']))->find()){
                echo 0;
                exit;
             }else{
-                $code = rand(1000,9999);//验证码
-				$host = "https://feginesms.market.alicloudapi.com";//api访问链接
-				$path = "/codeNotice";//API访问后缀
-				$method = "GET";
-				$appcode = "a7155429978941afbf2bcdc407e1e53c";//替换成自己的阿里云appcode
-				$headers = array();
-				array_push($headers, "Authorization:APPCODE " . $appcode);
-				$querys = "param=".$code."&phone=".$_POST['phone']."&sign=1&skin=8";  //参数写在这里
-				$url = $host . $path . "?" . $querys;//url拼接
-
-				$curl = curl_init();
-				curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
-				curl_setopt($curl, CURLOPT_URL, $url);
-				curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-				curl_setopt($curl, CURLOPT_FAILONERROR, false);
-				curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-				curl_setopt($curl, CURLOPT_HEADER, false);
-				if (1 == strpos("$".$host, "https://"))
-                {
-                    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-                    curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-                }
-				curl_exec($curl);
-				echo $code;
-
+                $res = sendMsg($_POST['phone']);
+                echo $res;
 			 }
 		 }else{
 			 exit(json_encode(array('msg'=>'未接受到数据')));
 		}
 	}
+public function tt(){
+            $phone='15023448139';
+      $res = sendMsg($phone);
+      print_r($res);eixt;
+}
+    /**
+     * 获取找回密码的验证码
+     */
+    public function back_password(){
+        if(!empty($_POST)){
+            $row = M('customer')->where(array('phone'=>$_POST['phone']))->find();
+            if(!$row){
+                echo 0;//未找到该号码，改账号无法修改密码
+                exit;
+            }else{
+                $res = sendMsg($_POST['phone']);
+                echo $res;
+            }
+        }else{
+            exit(json_encode(array('msg'=>'未接受到数据')));
+        }
+    }
 
 	/**
      * 找回密码

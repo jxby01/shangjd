@@ -7,8 +7,15 @@ class CutdownController extends Controller{
      */
     public function look_goods(){
         $id = $_POST['id'];
-        $res = M('activity')->join("sj_")->where(array("ac_id"=>$id))->find();
+        $res = M('activity')->join("sj_commodity ON sj_commodity.ac_id = sj_activity.ac_id")->where(array(" sj_activity.ac_id"=>$id))->select();
+        $this->ajaxReturn($res);
+    }
 
+    /**
+     * 商品列表/创建砍价
+     */
+    public function create_cut(){
+        
     }
 }
 ?>
