@@ -7,7 +7,7 @@ class CutdownController extends Controller{
      */
     public function look_goods(){
         $id = $_POST['id'];
-        $res = M('activity')->join("")->where(array("ac_id"=>$id))->find();
+        $res = M('activity')->join("sj_")->where(array("ac_id"=>$id))->find();
 
     }
 }

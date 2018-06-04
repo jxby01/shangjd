@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7150d4c6-7d4b-4436-8c27-32bba1a055d8" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php" afterPath="$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php" />
+      <change beforePath="$PROJECT_DIR$/sjd/Api/Controller/CutdownController.class.php" afterPath="$PROJECT_DIR$/sjd/Api/Controller/CutdownController.class.php" />
+      <change beforePath="$PROJECT_DIR$/sjd/Runtime/Logs/Api/18_06_04.log" afterPath="$PROJECT_DIR$/sjd/Runtime/Logs/Api/18_06_04.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +22,8 @@
       <file leaf-file-name="AddController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="170" column="47" lean-forward="true" selection-start-line="170" selection-start-column="47" selection-end-line="170" selection-end-column="47" />
+            <state relative-caret-position="440">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -30,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/CutdownController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -42,6 +45,7 @@
     <findStrings>
       <find>$bodys</find>
       <find>$ajaxReturn</find>
+      <find>登录</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,12 +157,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528078750475</updated>
-      <workItem from="1528078752224" duration="15476000" />
+      <workItem from="1528078752224" duration="16266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15476000" />
+    <option name="totallyTimeSpent" value="16266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -200,15 +204,15 @@
     <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/CutdownController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="170" column="47" lean-forward="true" selection-start-line="170" selection-start-column="47" selection-end-line="170" selection-end-column="47" />
+        <state relative-caret-position="440">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>

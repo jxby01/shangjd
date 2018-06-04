@@ -152,7 +152,6 @@ class AddController extends Controller{
     public function user_login(){
         if(!empty($_POST)){
             $name = $_POST['phone'];
-
             $pass = sha1($_POST['password']);
             $res = M('customer')->where(array('phone'=>$name,'password'=>$pass))->find();
             if($res){

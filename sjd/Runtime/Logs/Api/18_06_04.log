@@ -10,3 +10,13 @@ ERR: 1146:Table 'sjd.sj_actor' doesn't exist
 ERR: 1146:Table 'sjd.sj_actor' doesn't exist
  [ SQL语句 ] : SHOW COLUMNS FROM `sj_actor`
 
+[ 2018-06-04T16:55:06+08:00 ] 127.0.0.1 /index.php/Api/Add/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.0840s ]
+SQL: SELECT * FROM `sj_actor` WHERE `acr_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
