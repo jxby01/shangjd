@@ -92,7 +92,7 @@ class AddController extends Controller{
             header('Access-Control-Allow-Origin:*');
             if(!empty($_POST)){
             if(M('customer')->where(array('phone'=>$_POST['phone']))->find()){
-                exit(json_encode(array('msg'=>'账号已被注册','result'=>0)));
+                exit(0);
             }else{
                 $code = rand(1000,9999);//验证码
 				$host = "https://feginesms.market.alicloudapi.com";//api访问链接
