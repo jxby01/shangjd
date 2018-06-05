@@ -2,6 +2,13 @@
 namespace Admin\Controller;
 use Think\Controller;
 class IndexController extends CommonController{
+
+	/**
+	 * 用户列表
+	 *   1.查询用户数据表
+	 *   2.渲染用户列表
+	 *   3.分页
+	 */
 	public function index(){
 		$customer = M('customer'); // 实例化User对象
 		$count = $customer->count();// 查询满足要求的总记录数
@@ -14,6 +21,11 @@ class IndexController extends CommonController{
 		$this->assign('page',$show);// 赋值分页输出
 		$this->view('index/index');
 	}
+	/**
+	 * 修改密码
+	 * 	 1.post获取密码确认
+	 * 	 2.返回验证结果（1-success，2-error）
+	 */
 	public function admin_edit(){
 		$pass = sha1($_POST['pass']);
 		$name = $_SESSION['name'];
@@ -23,13 +35,19 @@ class IndexController extends CommonController{
 			echo 2;
 		}
 	}
-	
+	/**
+	 *修改登录账户
+	 *	1.post接受修改用户名，密码
+	 *	2.修改用户名，密码（入库）
+	 *	3.返回修改信息（1-success，2-error）
+	 */
 	public function admin_do_edit(){
 		if(!empty($_POST)){
 			$data['password'] = sha1($_POST['password']);
 			$data['username'] = $_POST['username'];
 			$name = $_SESSION['name'];
-			if(M('admin')->where(['password'=>$pass])->save($data)){
+			$pass = $_SESSION['password'];
+			if(M('admin')->where(['password'=>$pass,'name'=>$name])->save($data)){
 				echo 1;
 			}else{
 				echo 0;
@@ -39,7 +57,9 @@ class IndexController extends CommonController{
 			$this->view();
 		}
 	}
-	
+	/**
+	 *
+	 */
 	public function admin_do_edits(){
 		if(!empty($_POST)){
 			$data['password'] = sha1($_POST['password']);

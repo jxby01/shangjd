@@ -6,9 +6,9 @@ class AddController extends Controller{
      *
      */
 	public function add_activity(){//创建活动，之后的添加数据均为修改
-		$data['create_id'] = 3;//$_POST['create_id'];//创建者的Id
-		$data['ac_create_time'] = time();
-		$res = M('activity')->add($data);
+
+		$_POST['ac_create_time'] = time();
+		$res = M('activity')->add($_POST);
 		if($res){
 			echo $res;//创建成功
 		}else{

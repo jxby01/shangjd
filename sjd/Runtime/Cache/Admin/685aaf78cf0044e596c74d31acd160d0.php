@@ -1,4 +1,4 @@
-<style>
+<?php if (!defined('THINK_PATH')) exit();?><style>
 .paging span.current{
 background:white;
 border:1px #000000 solid;
@@ -30,23 +30,21 @@ cursor:pointer;
     		<th>我的砍价</th>
     		<th>我的创建</th>
        </tr>
-	   <foreach name="list" item="vo">
-       <tr>
-        <td>{$vo.user_id}</td>
-		    <td>{$vo.user_name}</td>
-        <td><img style="width:45px;height:45px;" src="__ROOT__/{$vo.img}"></td>
-        <td>{$vo.phone}</td>
-        <td>{$vo.city}</td>
+	   <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr>
+        <td><?php echo ($vo["user_id"]); ?></td>
+		    <td><?php echo ($vo["user_name"]); ?></td>
+        <td><img style="width:45px;height:45px;" src="/<?php echo ($vo["img"]); ?>"></td>
+        <td><?php echo ($vo["phone"]); ?></td>
+        <td><?php echo ($vo["city"]); ?></td>
         <td><?php if($vo['sex'] == 1){echo '男';}elseif($vo['sex']==0){echo '女';}else{echo '保密';}?></td>
         <td><?php echo date('Y-m-d,H:i:s',$vo['create_time']);?></td>
-    		<td><a href="{:U('User/join')}?user_id={$vo['user_id']}" id="init">查看</a></td>
-        <td><a href="{:U('User/order')}?user_id={$vo['user_id']}" id="create">查看</a></td>
-    		<td><a href="{:U('User/activity')}?user_id={$vo['user_id']}" id="create">查看</a></td>
-       </tr>
-      </foreach>
+    		<td><a href="<?php echo U('User/join');?>?user_id=<?php echo ($vo['user_id']); ?>" id="init">查看</a></td>
+        <td><a href="<?php echo U('User/order');?>?user_id=<?php echo ($vo['user_id']); ?>" id="create">查看</a></td>
+    		<td><a href="<?php echo U('User/activity');?>?user_id=<?php echo ($vo['user_id']); ?>" id="create">查看</a></td>
+       </tr><?php endforeach; endif; ?>
       </table>
       <aside class="paging">
-		{$page}
+		<?php echo ($page); ?>
       </aside>
      </section>
 	 
