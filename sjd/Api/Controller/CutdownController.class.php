@@ -88,5 +88,16 @@ class CutdownController extends Controller{
         }
     }
 
+    /**
+     * “我”的活动列表
+     */
+    public function my_acrivity_list(){
+        if(!empty($_POST)){
+            $id = $_POST['user_id'];
+            $res = M('activity')->where(array("create_id"=>$id))->select();
+            $this->ajaxReturn($res);
+        }
+    }
+
 }
 ?>
