@@ -83,7 +83,8 @@ class CutdownController extends Controller{
             }
         }else{
             $id = $_GET['or_id'];
-            $res = M('order')->join()->where(array('sj_order.or_id'=>$id))->select();
+            $res = M('order')->join("sj_actor on sj_actor.or_id = sj_order.or_id")->where(array('sj_order.or_id'=>$id))->find();
+            $this->ajaxReturn($res);
         }
     }
 
