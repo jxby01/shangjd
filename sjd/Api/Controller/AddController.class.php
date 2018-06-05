@@ -29,7 +29,11 @@ class AddController extends Controller{
             }
         }
 	}
-
+    public function css(){
+        $url="http://www.bargain.com/excel.php";
+       $row=file_get_contents($url);
+       var_dump($row);
+    }
     /**
      * 商品信息的添加
      */
