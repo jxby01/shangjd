@@ -60,44 +60,47 @@ class CutdownController extends Controller{
      * 帮忙砍价，进入请传git
      */
     public function cut_help(){
-        if(!empty($_POST)){
-            $data['or_id'] = $_POST['or_id'];//传入的砍价的id
-            $com_id = $_POST['com_id'];//商品Id
-            $rs = M('order')->where(array('or_id'=>$data['or_id']))->find();//查询砍价金额
-            $re = M('actor')->where(array('or_id' => $data['or_id']))->select();//查询需砍价商品的参与人数
-            $ro = M('commodity')->where(array('com_id'=>$com_id))->find();//查询需砍价商品的限制人数
-            $num = count($re);
-            if($num<$ro['cut_num']){
-                $data['cus_id'] = $_POST['cus_id'];//砍价用户的ID
-                $data['create_time'] = time();
-                $cut= json_decode($rs['cut_arr']);
-                $cut_money = $cut['$num'];
-                $data['cut_money'] = $cut_money;
-                if(M('actor')->add($data)){
-                    $this->ajaxReturn($data['cut_money']);//成功入库,砍价金额回传
-                }else{
-                    $this->ajaxReturn(0);//入库失败
+        if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false) {
+            if (!empty($_POST)) {
+                $data['or_id'] = $_POST['or_id'];//传入的砍价的id
+                $com_id = $_POST['com_id'];//商品Id
+                $rs = M('order')->where(array('or_id' => $data['or_id']))->find();//查询砍价金额
+                $re = M('actor')->where(array('or_id' => $data['or_id']))->select();//查询需砍价商品的参与人数
+                $ro = M('commodity')->where(array('com_id' => $com_id))->find();//查询需砍价商品的限制人数
+                $num = count($re);
+                if ($num < $ro['cut_num']) {
+                    $data['cus_id'] = $_POST['cus_id'];//砍价用户的ID
+                    $data['create_time'] = time();
+                    $cut = json_decode($rs['cut_arr']);
+                    $cut_money = $cut['$num'];
+                    $data['cut_money'] = $cut_money;
+                    if (M('actor')->add($data)) {
+                        $this->ajaxReturn($data['cut_money']);//成功入库,砍价金额回传
+                    } else {
+                        $this->ajaxReturn(0);//入库失败
+                    }
+                } else {
+                    exit(json_encode(array('res' => '0', 'msg' => "超出最大限制")));
                 }
-            }else{
-                exit(json_encode(array('res'=>'0','msg'=>"超出最大限制")));
+            } else {
+                $id = $_GET['or_id'];
+                $res = M('order')->join("sj_actor on sj_actor.or_id = sj_order.or_id")->where(array('sj_order.or_id' => $id))->find();
+                $this->ajaxReturn($res);
             }
         }else{
-            $id = $_GET['or_id'];
-            $res = M('order')->join("sj_actor on sj_actor.or_id = sj_order.or_id")->where(array('sj_order.or_id'=>$id))->find();
-            $this->ajaxReturn($res);
+            return false;
         }
     }
 
     /**
      * “我”的活动列表
      */
-    public function my_acrivity_list(){
+    public function my_activity_list(){
         if(!empty($_POST)){
             $id = $_POST['user_id'];
             $res = M('activity')->where(array("create_id"=>$id))->select();
             $this->ajaxReturn($res);
         }
     }
-
 }
 ?>

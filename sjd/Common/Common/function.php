@@ -12,10 +12,11 @@
         $noncestr = "";  
         for($i = 0; $i < $leng; $i++)  
         {  
-            $noncestr .= $charts[mt_rand(0, $max)];  
+            $noncestr .= $charts[mt_rand(1, $max)];
         }  
         return $noncestr;
     }
+
     function sendMsg($phone){
         $code = rand(1000,9999);//验证码
         $host = "https://feginesms.market.alicloudapi.com";//api访问链接

@@ -9,25 +9,25 @@ class OpenidController extends Controller{
         $url = 'https://open.weixin.qq.com/connect/oauth2/authorize';
         $data = array
         (
-            'appid' => $appid,                    //Ð¡³ÌÐòappid
-            'secret' => $secret,            //Ð¡³ÌÐòÃØÔ¿
-            'js_code' => $js_code,                //Ð¡³ÌÐòµÇÂ¼»ñÈ¡µÄcode
+            'appid' => $appid,                    //Ð¡ï¿½ï¿½ï¿½ï¿½appid
+            'secret' => $secret,            //Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿
+            'js_code' => $js_code,                //Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½È¡ï¿½ï¿½code
             'grant_type' => 'authorization_code',            //
         );
         $openid = $this->httpRequest($url, 'POST', $data);
 		
         $obj = json_decode($openid);
-        exit(json_encode(array('openid' => $obj->openid,'session_key'=>$obj->session_key,'unionid'=>$obj->unionid, 'msg' => '³É¹¦')));
+        exit(json_encode(array('openid' => $obj->openid,'session_key'=>$obj->session_key,'unionid'=>$obj->unionid, 'msg' => 'ï¿½É¹ï¿½')));
     }
 
 
 /**
- * CURLÇëÇó
- * @param $url ÇëÇóurlµØÖ·
- * @param $method ÇëÇó·½·¨ get post
- * @param null $postfields postÊý¾ÝÊý×é
- * @param array $headers ÇëÇóheaderÐÅÏ¢
- * @param bool|false $debug µ÷ÊÔ¿ªÆô Ä¬ÈÏfalse
+ * CURLï¿½ï¿½ï¿½ï¿½
+ * @param $url ï¿½ï¿½ï¿½ï¿½urlï¿½ï¿½Ö·
+ * @param $method ï¿½ï¿½ï¿½ó·½·ï¿½ get post
+ * @param null $postfields postï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param array $headers ï¿½ï¿½ï¿½ï¿½headerï¿½ï¿½Ï¢
+ * @param bool|false $debug ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ Ä¬ï¿½ï¿½false
  * @return mixed
  */
 function httpRequest($url, $method, $postfields = null, $headers = array(), $debug = false)
@@ -37,8 +37,8 @@ function httpRequest($url, $method, $postfields = null, $headers = array(), $deb
     /* Curl settings */
     curl_setopt($ci, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0);
     curl_setopt($ci, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0");
-    curl_setopt($ci, CURLOPT_CONNECTTIMEOUT, 60); /* ÔÚ·¢ÆðÁ¬½ÓÇ°µÈ´ýµÄÊ±¼ä£¬Èç¹ûÉèÖÃÎª0£¬ÔòÎÞÏÞµÈ´ý */
-    curl_setopt($ci, CURLOPT_TIMEOUT, 7); /* ÉèÖÃcURLÔÊÐíÖ´ÐÐµÄ×î³¤ÃëÊý */
+    curl_setopt($ci, CURLOPT_CONNECTTIMEOUT, 60); /* ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½È´ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÞµÈ´ï¿½ */
+    curl_setopt($ci, CURLOPT_TIMEOUT, 7); /* ï¿½ï¿½ï¿½ï¿½cURLï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ðµï¿½ï¿½î³¤ï¿½ï¿½ï¿½ï¿½ */
     curl_setopt($ci, CURLOPT_RETURNTRANSFER, true);
     switch ($method) {
         case "POST":
@@ -49,21 +49,21 @@ function httpRequest($url, $method, $postfields = null, $headers = array(), $deb
             }
             break;
         default:
-            curl_setopt($ci, CURLOPT_CUSTOMREQUEST, $method); /* //ÉèÖÃÇëÇó·½Ê½ */
+            curl_setopt($ci, CURLOPT_CUSTOMREQUEST, $method); /* //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ */
             break;
     }
     $ssl = preg_match('/^https:\/\//i', $url) ? TRUE : FALSE;
     curl_setopt($ci, CURLOPT_URL, $url);
     if ($ssl) {
-        curl_setopt($ci, CURLOPT_SSL_VERIFYPEER, FALSE); // httpsÇëÇó ²»ÑéÖ¤Ö¤ÊéºÍhosts
-        curl_setopt($ci, CURLOPT_SSL_VERIFYHOST, FALSE); // ²»´ÓÖ¤ÊéÖÐ¼ì²éSSL¼ÓÃÜËã·¨ÊÇ·ñ´æÔÚ
+        curl_setopt($ci, CURLOPT_SSL_VERIFYPEER, FALSE); // httpsï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö¤Ö¤ï¿½ï¿½ï¿½hosts
+        curl_setopt($ci, CURLOPT_SSL_VERIFYHOST, FALSE); // ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½SSLï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
     }
-    //curl_setopt($ci, CURLOPT_HEADER, true); /*ÆôÓÃÊ±»á½«Í·ÎÄ¼þµÄÐÅÏ¢×÷ÎªÊý¾ÝÁ÷Êä³ö*/
+    //curl_setopt($ci, CURLOPT_HEADER, true); /*ï¿½ï¿½ï¿½ï¿½Ê±ï¿½á½«Í·ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
     curl_setopt($ci, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ci, CURLOPT_MAXREDIRS, 2);/*Ö¸¶¨×î¶àµÄHTTPÖØ¶¨ÏòµÄÊýÁ¿£¬Õâ¸öÑ¡ÏîÊÇºÍCURLOPT_FOLLOWLOCATIONÒ»ÆðÊ¹ÓÃµÄ*/
+    curl_setopt($ci, CURLOPT_MAXREDIRS, 2);/*Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½HTTPï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Çºï¿½CURLOPT_FOLLOWLOCATIONÒ»ï¿½ï¿½Ê¹ï¿½Ãµï¿½*/
     curl_setopt($ci, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($ci, CURLINFO_HEADER_OUT, true);
-    /*curl_setopt($ci, CURLOPT_COOKIE, $Cookiestr); * *COOKIE´ø¹ýÈ¥** */
+    /*curl_setopt($ci, CURLOPT_COOKIE, $Cookiestr); * *COOKIEï¿½ï¿½ï¿½ï¿½È¥** */
     $response = curl_exec($ci);
     $requestinfo = curl_getinfo($ci);
     $http_code = curl_getinfo($ci, CURLINFO_HTTP_CODE);
