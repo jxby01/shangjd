@@ -7,8 +7,23 @@ class CutdownController extends Controller{
      */
     public function look_goods(){
         $id = $_POST['id'];
-        $res = M('activity')->join("sj_commodity ON sj_commodity.ac_id = sj_activity.ac_id")->where(array(" sj_activity.ac_id"=>$id))->select();
-        $this->ajaxReturn($res);
+        $cus_id = $_POST['cus_id'];
+        $res = M('activity')->where(array('ac_id'=>$id))->find();
+        $res['start_time'] = date('Y年m月d H:i',$res['start_time']);
+        $res['end_time'] = date('Y年m月d H:i',$res['end_time']);
+        $row = M('commodity')->where(array('ac_id'=>$id))->select();
+        $actor = M('actor')->where(array('ac_id'=>$id))->count();
+        $order = M('order')->where(array('ac_id'=>$id))->count();
+        $orders = M('order')->join("sj_commodity on sj_commodity.com_id=sj_order.com_id")->where(array('sj_order.user_id'=>$cus_id,'if_end'=>1))->select();
+        for($i=0;$i<count($orders);$i++){
+            $orders[$i]['do_start_time'] = date('Y-m-d H:s', $orders[$i]['do_start_time']);
+            $orders[$i]['do_end_time'] = date('Y-m-d H:s', $orders[$i]['do_end_time']);
+        }
+        $result['if_end'] = $orders;
+        $result['tol'] =$actor+$order+$res['participants'];
+        $result['huodong'] =$res;
+        $result['shangp'] =$row;
+        $this->ajaxReturn($result);
     }
 
     /**
@@ -57,7 +72,7 @@ class CutdownController extends Controller{
     }
 
     /**
-     * 帮忙砍价，进入请传git
+     * 帮忙砍价，进入请传get
      */
     public function cut_help(){
         if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false) {
@@ -102,5 +117,6 @@ class CutdownController extends Controller{
             $this->ajaxReturn($res);
         }
     }
+
 }
 ?>
