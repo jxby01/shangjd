@@ -78,8 +78,11 @@ class CutdownController extends Controller{
                 echo 0;
             }
         }else{//get传值,拿到单条商品信息
-            $id = $_GET['id'];
-            $res = M('commodity')->where(array('com_id'=>$id))->find();
+            $id = $_GET['com_id'];
+           $user_id = $_GET['user_id'];
+            $res['commodity'] = M('commodity')->where(array('com_id'=>$id))->find();
+            $ck = M('order')->where(array('user_id'=>$user_id,'com_id'=>$id))->find();
+            $res['actor'] = M('actor')->where(array('or_id'=>$ck['or_id']))->find();
             $this->ajaxReturn($res);
         }
     }
