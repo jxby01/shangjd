@@ -1281,3 +1281,781 @@ SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1960s ]
 SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
 SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
 
+[ 2018-06-06T14:30:45+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.0950s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1470s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.2660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.2210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:30:46+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.2320s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.2350s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:33:10+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1160s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1270s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1370s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0010s ]
+
+[ 2018-06-06T14:35:28+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1270s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1300s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:35:37+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1400s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1270s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:35:38+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1300s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1560s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:35:39+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1300s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1290s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0030s ]
+
+[ 2018-06-06T14:38:00+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1420s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1410s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:38:47+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1710s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:38:57+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1320s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:39:09+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1410s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1390s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0010s ]
+
+[ 2018-06-06T14:39:20+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1430s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:39:42+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1420s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1290s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0030s ]
+
+[ 2018-06-06T14:39:55+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1410s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:40:16+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1400s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1420s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1300s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:40:25+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1450s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1390s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:40:30+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1420s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:40:35+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1410s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1420s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:40:59+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1410s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1300s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1450s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:42:08+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1430s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1550s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:44:49+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1250s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1430s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:45:17+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1300s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1450s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:46:30+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1400s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1400s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1410s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:47:43+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1330s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1300s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:48:38+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1270s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1390s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:50:29+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1240s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:50:50+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1450s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1260s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1360s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:52:14+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1010s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1510s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:55:05+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1440s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1290s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:55:59+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1420s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1260s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:56:26+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:57:32+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1310s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1290s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:58:07+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1730s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1860s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:58:14+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.0820s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.0670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.0630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0010s ]
+
+[ 2018-06-06T14:58:30+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1190s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1370s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:59:06+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.0630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.0700s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:59:16+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1490s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1530s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T14:59:30+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1570s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1580s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.0800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T15:01:38+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1420s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1670s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1560s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.0760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T15:02:26+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1410s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.0890s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.0600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.0670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T15:07:17+08:00 ] 127.0.0.1 /Api/Cutdown/my_activity_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `sj_activity` WHERE `create_id` = 0  [ RunTime:0.0010s ]
+
+[ 2018-06-06T15:07:36+08:00 ] 127.0.0.1 /Api/Cutdown/my_activity_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1530s ]
+SQL: SELECT * FROM `sj_activity` WHERE `create_id` = 0  [ RunTime:0.0010s ]
+
+[ 2018-06-06T15:07:48+08:00 ] 127.0.0.1 /Api/Cutdown/my_activity_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1780s ]
+SQL: SELECT * FROM `sj_activity` WHERE `create_id` = 0  [ RunTime:0.0020s ]
+
+[ 2018-06-06T15:16:00+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1110s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1270s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.2150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T15:16:34+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1110s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0010s ]
+
+[ 2018-06-06T15:16:39+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1260s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1260s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0010s ]
+
+[ 2018-06-06T15:17:11+08:00 ] 127.0.0.1 /Api/Cutdown/look_goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sj_activity` [ RunTime:0.1270s ]
+SQL: SELECT * FROM `sj_activity` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_commodity` [ RunTime:0.1280s ]
+SQL: SELECT * FROM `sj_commodity` WHERE `ac_id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_actor` [ RunTime:0.1250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_actor` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sj_order` [ RunTime:0.1240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sj_order` WHERE `ac_id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sj_order` INNER JOIN sj_commodity on sj_commodity.com_id=sj_order.com_id  WHERE sj_order.user_id = '5' AND `if_end` = 1  [ RunTime:0.0020s ]
+

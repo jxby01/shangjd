@@ -16,8 +16,8 @@ class CutdownController extends Controller{
         $order = M('order')->where(array('ac_id'=>$id))->count();
         $orders = M('order')->join("sj_commodity on sj_commodity.com_id=sj_order.com_id")->where(array('sj_order.user_id'=>$cus_id,'if_end'=>1))->select();
         for($i=0;$i<count($orders);$i++){
-            $orders[$i]['do_start_time'] = date('Y-m-d H:s', $orders[$i]['do_start_time']);
-            $orders[$i]['do_end_time'] = date('Y-m-d H:s', $orders[$i]['do_end_time']);
+            $orders[$i]['do_start_time'] = date('Y-m-d', $orders[$i]['do_start_time']);
+            $orders[$i]['do_end_time'] = date('Y-m-d', $orders[$i]['do_end_time']);
         }
         $result['if_end'] = $orders;
         $result['tol'] =$actor+$order+$res['participants'];
