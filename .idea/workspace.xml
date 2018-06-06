@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7150d4c6-7d4b-4436-8c27-32bba1a055d8" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/sjd/Api/Controller/CutdownController.class.php" afterPath="$PROJECT_DIR$/sjd/Api/Controller/CutdownController.class.php" />
       <change beforePath="$PROJECT_DIR$/sjd/Runtime/Logs/Api/18_06_06.log" afterPath="$PROJECT_DIR$/sjd/Runtime/Logs/Api/18_06_06.log" />
     </list>
@@ -20,8 +21,8 @@
       <file leaf-file-name="AddController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="648">
+              <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -80,8 +81,8 @@
       <file leaf-file-name="CutdownController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/CutdownController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state relative-caret-position="368">
+              <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -248,12 +249,12 @@
       <updated>1528078750475</updated>
       <workItem from="1528078752224" duration="24880000" />
       <workItem from="1528159342107" duration="23198000" />
-      <workItem from="1528245687576" duration="12103000" />
+      <workItem from="1528245687576" duration="15199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60181000" />
+    <option name="totallyTimeSpent" value="63277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -429,14 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/WeixinController.class.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -470,10 +463,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/AddController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sjd/Api/Controller/CutdownController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="368">
+          <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
           <folding />
         </state>
       </provider>

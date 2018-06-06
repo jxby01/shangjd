@@ -25,7 +25,20 @@ class CutdownController extends Controller{
         $result['shangp'] =$row;
         $this->ajaxReturn($result);
     }
-
+    /**
+     * 砍价已完成的详细内容
+     */
+    public function cut_end(){
+        if(!empty($_POST)){
+            $id = $_POST['or_id'];
+            $row = M('order')->join("sj_commodity on sj_commodity.com_id=sj_order.com_id")->where(array('or_id'=>$id,'if_end'=>1))->find();
+            $row['do_start_time'] = date("Y-m-d",$row['do_start_time']);
+            $row['do_end_time'] = date("Y-m-d",$row['do_end_time']);
+            $this->ajaxReturn($row);
+        }else{
+            echo 0;
+        }
+    }
     /**
      * 创建砍价
      *  1.生成砍价随机金额
