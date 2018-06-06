@@ -7,7 +7,7 @@ class UserinfoController extends Controller
     * 微信授权
     */
    public function get_user_info(){
-        $url1="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx24c6ad935906fb7e&redirect_uri=http://zxy.mynatapp.cc/index.php/Api/Userinfo/rtuser.html&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
+        $url1="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfcaa24e012dc65df&redirect_uri=http://zxy.mynatapp.cc/index.php/Api/Userinfo/rtuser.html&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
         Header("Location: $url1");
    }
     //保存获取到用户信息
