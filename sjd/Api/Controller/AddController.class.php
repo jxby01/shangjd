@@ -78,30 +78,30 @@ class AddController extends Controller{
 	public function add_user(){
         header('Access-Control-Allow-Origin:*');
         if(!empty($_POST)){
-                $data['phone'] = $_POST['phone'];
-                $data['password'] = sha1($_POST['password']);
-                $data['create_time'] = time();
-                if(M('customer')->add($data)){
-                    echo 1;//注册成功
-                }else{
-                    echo 0;//注册失败
-                }
+            $data['phone'] = $_POST['phone'];
+            $data['password'] = sha1($_POST['password']);
+            $data['create_time'] = time();
+            if(M('customer')->add($data)){
+                echo 1;//注册成功
+            }else{
+                echo 0;//注册失败
+            }
         }
     }
 
     /**
      * 获取注册验证码
      */
-        public function register(){//注册发送验证码
-            if(!empty($_POST)){
+    public function register(){//注册发送验证码
+        if(!empty($_POST)){
             if(M('customer')->where(array('phone'=>$_POST['phone']))->find()){
                echo 0;
                exit;
             }else{
                 $res = sendMsg($_POST['phone']);
                 echo $res;
-			 }
-		 }else{
+			}
+		}else{
 			 exit(json_encode(array('msg'=>'未接受到数据')));
 		}
 	}
